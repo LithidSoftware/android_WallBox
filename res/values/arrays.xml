@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_titles">
+        <item>@string/main_title_wallsnap</item>
+        <item>@string/main_title_wallpapers</item>
+        <item>@string/main_title_colorwall</item>
+        <item>@string/main_title_saturate</item>
+        <item>@string/main_title_randomize</item>
+        <item>@string/main_title_themes</item>
+    </string-array>
+
+    <string-array name="time_intervals">
+        <item>None (off)</item>
+        <item>Every 1 min</item>
+        <item>Every 2 mins</item>
+        <item>Every 5 mins</item>
+        <item>Every 15 mins</item>
+        <item>Every 30 mins</item>
+        <item>Every 45 mins</item>
+        <item>Every 60 mins</item>
+        <item>Every 2 hours</item>
+        <item>Every 4 hours</item>
+        <item>Every 6 hours</item>
+        <item>Every 12 hours</item>
+        <item>Every 24 hours</item>
+    </string-array>
+
+    <string-array name="satValues">
+        <item>0</item>
+        <item>0.1</item>
+        <item>0.15</item>
+        <item>0.2</item>
+        <item>0.25</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1</item>
+        <item>0.9</item>
+        <item>0.8</item>
+        <item>0.7</item>
+        <item>0.6</item>
+        <item>0.5</item>
+        <item>0.4</item>
+        <item>0.3</item>
+        <item>0.25</item>
+        <item>0.2</item>
+        <item>0.15</item>
+        <item>0.1</item>
+    </string-array>
+
+    <string-array name="satValuesAutoNew">
+        <item>0</item>
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="wallpaper_sort_entries">
+        <item>@string/wallpaper_sort_latest</item>
+        <item>@string/wallpaper_sort_earliest</item>
+        <item>@string/wallpaper_sort_name_az</item>
+        <item>@string/wallpaper_sort_name_za</item>
+        <item>@string/wallpaper_sort_author_az</item>
+        <item>@string/wallpaper_sort_author_za</item>
+    </string-array>
+
+    <string-array name="wallsnap_types">
+        <item>@string/wallsnap_type_save</item>
+        <item>@string/wallsnap_type_saveapply</item>
+        <item>@string/wallsnap_type_apply</item>
+    </string-array>
+
+    <string-array name="wallsnap_types_progress">
+        <item>@string/wallsnap_save</item>
+        <item>@string/wallsnap_saveapply</item>
+        <item>@string/wallsnap_apply</item>
+    </string-array>
+
+    <string-array name="wallsnap_types_toast">
+        <item>@string/wallsnap_saved</item>
+        <item>@string/wallsnap_savedapplied</item>
+        <item>@string/wallsnap_applied</item>
+    </string-array>
+
+</resources>

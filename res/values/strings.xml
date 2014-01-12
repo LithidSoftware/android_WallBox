@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WallBox</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="loading">Loading&#46;&#46;&#46;</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="last_known_current_live">Using last known wallpaper, your current is a live wallpaper</string>
+
+    <!-- Saturate Strings -->
+    <string name="main_title_saturate">Saturate</string>
+    <string name="main_title_saturate_pro">Saturate (Pro)</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="welcome">Welcome to Saturate!</string>
+    <string name="close">Close</string>
+    <string name="saturate_description">
+        This app will allow you to change the saturation every hour. Set the wallpaper,
+        open this app, preview the different times and what the wallpaper will look like, then hit start! It is that
+        easy!\n\nYou can stop this at any time by either changing the wallpaper, or opening this app and clicking stop.
+        Enjoy!\n\n Please note: This app does not run all the time, it only runs quickly once at the top of each hour!
+        You will have to stop this service if you change the wallpaper, the android API deprecated the method to check
+        if you changed the wallpaper. Please be aware of this. - Thanks!
+    </string>
+    <string name="wallpaper_at">Wallpaper@</string>
+    <string name="apply_error">Error applying wallpaper</string>
+    <string name="set_wallpaper">Setting wallpaper</string>
+    <string name="live_wallpaper">"Using last known wallpaper, current is a live wallpaper"</string>
+    <string name="started_sat">"Started auto saturation!"</string>
+    <string name="stopped_sat">"Stopped auto saturation!"</string>
+
+    <!-- Randomize Strings -->
+    <string name="main_title_randomize">Randomize</string>
+    <string name="randomizer_description">This app will allow you to change the random wallpapers.</string>
+    <string name="action_interval">Set interval</string>
+    <string name="action_add">Add image</string>
+    <string name="action_delete">Remove image</string>
+
+    <!-- ColorWall Strings -->
+    <string name="main_title_colorwall">ColorWall</string>
+    <string name="colorwall_description">This app will allow you to change the color of the wallpaper and set it.
+    </string>
+
+    <!-- WallSnap Strings -->
+    <string name="main_title_wallsnap">WallSnap</string>
+    <string name="wallsnap_page_1">Editor</string>
+    <string name="wallsnap_page_2">Random values</string>
+    <string name="wallsnap_brightness">Brightness</string>
+    <string name="wallsnap_hue">Hue</string>
+    <string name="wallsnap_sat">Saturation</string>
+    <string name="wallsnap_contrast">Contrast</string>
+    <string name="wallsnap_description">
+        This app will allow you to save the current wallpaper to external storage.
+    </string>
+    <string name="wallpaper_error">There was an error saving/applying the wallpaper</string>
+    <string name="wallsnap_type_dialog_title">"Save/apply wallpaper"</string>
+    <string name="wallsnap_type_save">Save</string>
+    <string name="wallsnap_type_saveapply">Save/Apply</string>
+    <string name="wallsnap_type_apply">Apply</string>
+    <string name="wallsnap_save">Saving wallpaper</string>
+    <string name="wallsnap_saveapply">Saving and applying wallpaper</string>
+    <string name="wallsnap_apply">Applying wallpaper</string>
+    <string name="wallsnap_saved">Wallpaper saved</string>
+    <string name="wallsnap_savedapplied">Wallpaper saved and applied</string>
+    <string name="wallsnap_applied">Wallpaper applied</string>
+
+    <!-- Wallpapers Strings -->
+    <string name="main_title_wallpapers">WallSnap Local</string>
+    <string name="wallpaper_description">You can view and edit wallsnaps here!</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="downloaded_removed">All downloaded items have been removed</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="apply">Apply</string>
+    <string name="sort">Sort</string>
+    <string name="search_title">Search</string>
+    <string name="settings_title">Settings</string>
+    <string name="refresh_title">Refresh</string>
+    <string name="empty_content">No items found</string>
+    <string name="toast_notification_error">Wallpaper was downloaded but returned a bad value. Try again.</string>
+    <string name="toast_download_unsuccessful">Wallpaper had issues downloading. Try again.</string>
+    <string name="wallpaper_applying_toast">Applying wallpaper</string>
+    <string name="wallpaper_applied_toast">Wallpaper applied</string>
+    <string name="wallpaper_not_applied_toast">IO Error: Wallpaper not applied</string>
+    <string name="wallpaper_sort_latest">Latest</string>
+    <string name="wallpaper_sort_earliest">Earliest</string>
+    <string name="wallpaper_sort_name_az">Name (a-z)</string>
+    <string name="wallpaper_sort_name_za">Name (z-a)</string>
+    <string name="wallpaper_sort_author_az">Author (a-z)</string>
+    <string name="wallpaper_sort_author_za">Author (z-a)</string>
+    <string name="cat_manage">Manager</string>
+    <string name="cat_options">Options</string>
+    <string name="pref_wallpaper_settings_clear_favorites_summary">Clear the local favorites database</string>
+    <string name="pref_wallpaper_settings_clear_favorites_title">Clear all favorites</string>
+    <string name="pref_wallpaper_settings_clear_downloaded_summary">Clear the local downloaded database</string>
+    <string name="pref_wallpaper_settings_clear_downloaded_title">Clear all downloaded</string>
+    <string name="pref_wallpaper_check_boot_title">Check updates on boot</string>
+    <string name="pref_wallpaper_check_boot_summary">Check for updates after the phone boot up from a reboot or power
+        on
+    </string>
+    <string name="pref_wallpaper_check_interval_title">Check updates</string>
+    <string name="pref_wallpaper_check_interval_summary">Check for updates twice a day</string>
+    <string name="pref_wallpaper_check_save_sort_title">Remember sort</string>
+    <string name="pref_wallpaper_check_save_sort_summary">Check to remember your sort option</string>
+
+    <!-- Themes -->
+    <string name="main_title_themes">Themes</string>
+    <string name="main_title_themes_pro">Themes (Pro)</string>
+
+    <!-- About Strings -->
+    <string name="main_title_about">About</string>
+    <string name="about_author">Author:\nJeremie Long (lithid)\nmrlithid@gmail.com</string>
+    <string name="about_version">Version:\n1.2.1</string>
+    <string name="info">Info</string>
+    <string name="about_notice">Just a little something something&#46;&#46;&#46; ya know for science.</string>
+    <string name="twitter">Twitter</string>
+    <string name="googleplus">Google+</string>
+    <string name="gmail">Gmail</string>
+    <string name="toggle">Toggle</string>
+    <string name="contribute">Contribute</string>
+    <string name="contributors">Contributors</string>
+    <string name="changelog">Changelog</string>
+    <string name="donate">Donate</string>
+
+    <!-- Colors -->
+    <string name="blue">#0099cc</string>
+    <string name="white">#FFFFFF</string>
+    <string name="pref_wallpaper_check_hq_summary">Use high quality preview images (uses more data)</string>
+    <string name="pref_wallpaper_check_hq_title">High quality previews</string>
+    <string name="wallsnap_blur">Blur</string>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Dark" parent="android:Theme.Holo">
+        <item name="android:windowBackground">@color/dark_main_background</item>
+        <item name="android:actionBarStyle">@style/DarkActionBarStyle</item>
+        <item name="main_border_background">@drawable/dark_grid_items_bg</item>
+        <item name="main_drawer_background">@color/dark_actionbar_background</item>
+        <item name="main_drawer_selector">@drawable/dark_drawer_items_bg</item>
+        <item name="main_drawer_text">@color/white_e</item>
+        <item name="main_list_divider">@color/dark_list_divider</item>
+        <item name="ic_action_googleplus">@drawable/ic_action_googleplus</item>
+        <item name="ic_action_contribute">@drawable/ic_action_contribute</item>
+        <item name="ic_action_changelog">@drawable/ic_action_changelog</item>
+        <item name="ic_action_donate">@drawable/ic_action_donate</item>
+        <item name="ic_action_search">@drawable/ic_action_search</item>
+        <item name="ic_action_clock">@drawable/ic_action_clock</item>
+        <item name="ic_action_add">@drawable/ic_action_add</item>
+        <item name="ic_action_delete">@drawable/ic_action_delete</item>
+        <item name="ic_action_delete_settings">@drawable/ic_action_delete</item>
+        <item name="ic_action_apply">@drawable/ic_action_apply</item>
+        <item name="ic_action_save">@drawable/ic_action_save</item>
+    </style>
+
+    <style name="LightDarkActionBar" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/light_main_background</item>
+        <item name="main_border_background">@drawable/light_grid_items_bg</item>
+        <item name="main_drawer_background">@color/dark_actionbar_background</item>
+        <item name="main_drawer_selector">@drawable/dark_drawer_items_bg</item>
+        <item name="main_drawer_text">@color/white_e</item>
+        <item name="main_list_divider">@color/dark_list_divider</item>
+        <item name="ic_action_googleplus">@drawable/ic_action_googleplus_light</item>
+        <item name="ic_action_contribute">@drawable/ic_action_contribute_light</item>
+        <item name="ic_action_changelog">@drawable/ic_action_changelog_light</item>
+        <item name="ic_action_donate">@drawable/ic_action_donate_light</item>
+        <item name="ic_action_search">@drawable/ic_action_search</item>
+        <item name="ic_action_clock">@drawable/ic_action_clock</item>
+        <item name="ic_action_add">@drawable/ic_action_add</item>
+        <item name="ic_action_delete">@drawable/ic_action_delete</item>
+        <item name="ic_action_delete_settings">@drawable/ic_action_delete_light</item>
+        <item name="ic_action_apply">@drawable/ic_action_apply</item>
+        <item name="ic_action_save">@drawable/ic_action_save</item>
+    </style>
+
+    <style name="Light" parent="android:Theme.Holo.Light">
+        <item name="android:windowBackground">@color/light_main_background</item>
+        <item name="android:actionBarStyle">@style/LightActionBarStyle</item>
+        <item name="main_border_background">@drawable/light_grid_items_bg</item>
+        <item name="main_drawer_background">@color/light_actionbar_background</item>
+        <item name="main_drawer_selector">@drawable/light_drawer_items_bg</item>
+        <item name="main_drawer_text">@color/black_1</item>
+        <item name="main_list_divider">@color/light_list_divider</item>
+        <item name="ic_action_googleplus">@drawable/ic_action_googleplus_light</item>
+        <item name="ic_action_contribute">@drawable/ic_action_contribute_light</item>
+        <item name="ic_action_changelog">@drawable/ic_action_changelog_light</item>
+        <item name="ic_action_donate">@drawable/ic_action_donate_light</item>
+        <item name="ic_action_search">@drawable/ic_action_search_light</item>
+        <item name="ic_action_clock">@drawable/ic_action_clock_light</item>
+        <item name="ic_action_add">@drawable/ic_action_add_light</item>
+        <item name="ic_action_delete">@drawable/ic_action_delete_light</item>
+        <item name="ic_action_delete_settings">@drawable/ic_action_delete_light</item>
+        <item name="ic_action_apply">@drawable/ic_action_apply_light</item>
+        <item name="ic_action_save">@drawable/ic_action_save_light</item>
+    </style>
+
+    <style name="DarkActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/dark_actionbar</item>
+    </style>
+
+    <style name="LightActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/light_actionbar</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="@android:style/Theme.Holo.Dialog"/>
+</resources>

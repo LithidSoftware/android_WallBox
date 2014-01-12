@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_refresh" type="id"/>
+    <item name="action_search" type="id"/>
+    <item name="action_sort" type="id"/>
+    <item name="action_downloads" type="id"/>
+    <item name="action_add" type="id"/>
+    <item name="action_interval" type="id"/>
+    <item name="action_about" type="id"/>
+    <item name="action_apply" type="id"/>
+    <item name="action_settings" type="id"/>
+    <item name="action_delete" type="id"/>
+</resources>

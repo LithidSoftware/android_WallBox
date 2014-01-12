@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Jeremie Long
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/top_btn_updates"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/about_author"/>
+
+    <TextView
+            android:id="@+id/yes_updates_version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/about_version"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_about"/>
+
+    <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+        <ImageButton
+                android:id="@+id/btn_googleplus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/googleplus"
+                android:src="?attr/ic_action_googleplus"/>
+
+        <ImageButton
+                android:id="@+id/btn_contribute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/contribute"
+                android:src="?attr/ic_action_contribute"/>
+
+        <ImageButton
+                android:id="@+id/btn_changelog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="Changelog"
+                android:src="?attr/ic_action_changelog"/>
+
+        <ImageButton
+                android:id="@+id/btn_donate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/donate"
+                android:src="?attr/ic_action_donate"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:key="key_wallpaper_cat_manage"
+            android:title="@string/main_title_wallpapers">
+        <Preference
+            android:key="key_wallpaper_clear_downloaded"
+            android:icon="?attr/ic_action_delete_settings"
+            android:summary="@string/pref_wallpaper_settings_clear_downloaded_summary"
+            android:title="@string/pref_wallpaper_settings_clear_downloaded_title"/>
+        <CheckBoxPreference
+            android:key="key_wallpaper_check_hq"
+            android:summary="@string/pref_wallpaper_check_hq_summary"
+            android:title="@string/pref_wallpaper_check_hq_title"/>
+        <CheckBoxPreference
+                android:key="key_wallpaper_check_boot"
+                android:summary="@string/pref_wallpaper_check_boot_summary"
+                android:title="@string/pref_wallpaper_check_boot_title"/>
+        <CheckBoxPreference
+                android:key="key_wallpaper_check_interval"
+                android:summary="@string/pref_wallpaper_check_interval_summary"
+                android:title="@string/pref_wallpaper_check_interval_title"/>
+        <CheckBoxPreference
+                android:key="key_wallpaper_check_save_sort"
+                android:summary="@string/pref_wallpaper_check_save_sort_summary"
+                android:title="@string/pref_wallpaper_check_save_sort_title"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
