@@ -19,6 +19,7 @@ package com.lithidsw.wallbox.app.randomizer;
 import java.io.File;
 import java.util.ArrayList;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -28,7 +29,11 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.DocumentsContract;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.util.SparseBooleanArray;
@@ -236,18 +241,52 @@ public class RandomizerFrag extends Fragment {
         builder.show();
     }
 
-    private String checkImage(Uri uri) {
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    private String checkImage(Intent data) {
         String image_path = null;
-        Cursor cursor = fa.getContentResolver().query(uri, new String[]{android.provider.MediaStore.Images.ImageColumns.DATA}, null, null, null);
-        if (cursor != null) {
-            cursor.moveToFirst();
-            image_path = cursor.getString(0);
-            cursor.close();
+        Uri uri_data = data.getData();
+        if (uri_data != null) {
+            Cursor cursor;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                String wholeID = DocumentsContract.getDocumentId(uri_data);
+                String id = wholeID.split(":")[1];
+
+                String[] projection = { MediaStore.Images.Media.DATA };
+                String whereClause = MediaStore.Images.Media._ID + "=?";
+                cursor = fa.getContentResolver().query(getUri(), projection, whereClause,
+                        new String[]{id}, null);
+                if( cursor != null ){
+                    int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+                    if (cursor.moveToFirst()) {
+                        image_path = cursor.getString(column_index);
+                    }
+
+                    cursor.close();
+                }
+            } else {
+                cursor = fa.getContentResolver().query(uri_data,
+                        new String[]{android.provider.MediaStore.Images.ImageColumns.DATA},
+                        null, null, null);
+                if (cursor != null) {
+                    cursor.moveToFirst();
+                    image_path = cursor.getString(0);
+                    cursor.close();
+                }
+            }
         }
+
         return image_path;
     }
 
-    private void galleryAddPic(Uri data) {
+    private Uri getUri() {
+        String state = Environment.getExternalStorageState();
+        if(!state.equalsIgnoreCase(Environment.MEDIA_MOUNTED))
+            return MediaStore.Images.Media.INTERNAL_CONTENT_URI;
+
+        return MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+    }
+
+    private void galleryAddPic(Intent data) {
         String image = checkImage(data);
         if (image != null) {
             if (!new TableHelper(fa).isExist(Utils.calculateMD5(image))) {
@@ -270,7 +309,7 @@ public class RandomizerFrag extends Fragment {
         if (resultCode == Activity.RESULT_OK) {
             switch (requestCode) {
                 case GET_IMAGE_CODE:
-                    galleryAddPic(data.getData());
+                    galleryAddPic(data);
                     break;
             }
         }
